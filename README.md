@@ -1,2 +1,2 @@
 # au-student-disposable-income
-Analysis of disposable income for international students across 5 Australian cities, with scenario modelling and Power BI dashboard
+Analysis of disposable income for international students across five Australian cities, combining wage and living cost data with scenario modelling and an interactive Power BI dashboard.
