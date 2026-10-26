@@ -1,0 +1,27 @@
+﻿"(restaurant, casual, adult)",,,,
+award,level,day_type,casual_hourly_rate,effective_from
+Restaurant Industry Award,Introductory,Weekday,32.18,1/7/2026
+Restaurant Industry Award,Introductory,Saturday,38.61,1/7/2026
+Restaurant Industry Award,Introductory,Sunday,38.61,1/7/2026
+Restaurant Industry Award,Introductory,Public holiday,64.35,1/7/2026
+Restaurant Industry Award,Level 1,Weekday,33.05,1/7/2026
+Restaurant Industry Award,Level 1,Saturday,39.66,1/7/2026
+Restaurant Industry Award,Level 1,Sunday,39.66,1/7/2026
+Restaurant Industry Award,Level 1,Public holiday,66.1,1/7/2026
+Restaurant Industry Award,Level 2,Weekday,33.85,1/7/2026
+Restaurant Industry Award,Level 2,Saturday,40.62,1/7/2026
+Restaurant Industry Award,Level 2,Sunday,40.62,1/7/2026
+Restaurant Industry Award,Level 2,Public holiday,67.7,1/7/2026
+,,,,
+"(retail, casual, adult)",,,,
+award,level,day_type,casual_hourly_rate,effective_from
+General Retail Industry Award,Level 1,Weekday,34.76,1/7/2026
+General Retail Industry Award,Level 1,Weekday evening (after 6pm),41.72,1/7/2026
+General Retail Industry Award,Level 1,Saturday,41.72,1/7/2026
+General Retail Industry Award,Level 1,Sunday,48.67,1/7/2026
+General Retail Industry Award,Level 1,Public holiday,69.53,1/7/2026
+General Retail Industry Award,Level 2,Weekday,35.56,1/7/2026
+General Retail Industry Award,Level 2,Weekday evening (after 6pm),42.68,1/7/2026
+General Retail Industry Award,Level 2,Saturday,42.68,1/7/2026
+General Retail Industry Award,Level 2,Sunday,49.79,1/7/2026
+General Retail Industry Award,Level 2,Public holiday,71.13,1/7/2026
