@@ -152,7 +152,7 @@ Scenarios are interpreted as realistic options only after checking official visa
 |---|---|
 | Scope definition | Done |
 | Repository setup | Done |
-| Data collection | Not started |
+| Data collection | Done |
 | Data cleaning | Not started |
 | Financial modelling | Not started |
 | Dashboard | Not started |
