@@ -1,0 +1,9 @@
+﻿income_from,income_to,max_offset,reduction_rate,reduction_starts_at,note
+0,37500,700,0,0,Maximum offset
+37501,45000,700,0.05,37500,"700 − 0.05 x (income − 37,500)"
+45001,66667,325,0.015,45000,"325 − 0.015 x (income − 45,000)"
+66668,,0,0,0,Not eligible
+,,,,,
+,,,,,
+,,,,,
+,,,,,

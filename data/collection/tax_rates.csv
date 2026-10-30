@@ -1,0 +1,9 @@
+﻿residency,income_from,income_to,base_tax,rate,financial_year
+Resident,0,18200,0,0,2026-27
+Resident,18201,45000,0,0.15,2026-27
+Resident,45001,135000,4020,0.3,2026-27
+Resident,135001,190000,31020,0.37,2026-27
+Resident,190001,,51370,0.45,2026-27
+Foreign resident,0,135000,0,0.3,2025-26
+Foreign resident,135001,190000,40500,0.37,2025-26
+Foreign resident,190001,,60850,0.45,2025-26
