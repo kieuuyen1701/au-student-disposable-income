@@ -34,7 +34,7 @@ This project identifies which cities and employment scenarios offer better finan
 ### In Scope
 
 - Cities: Melbourne, Sydney, Brisbane, Perth, Adelaide.
-- Employment categories: Hospitality, Retail, Tutoring, Junior IT (subject to data availability; may be dropped if no defensible wage data exists).
+- Employment categories: Hospitality, Retail (subject to data availability; may be dropped if no defensible wage data exists).
 - Wage, rental and essential living cost data collection.
 - Estimated income tax under documented assumptions.
 - Share-house vs living-alone comparison.
