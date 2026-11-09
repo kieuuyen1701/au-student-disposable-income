@@ -1,0 +1,6 @@
+﻿city,accommodation,transport,accommodation_plus_transport,food_cheap,food_moderate,total_cheap,total_moderate,verified,period,run_date
+Melbourne,384,28,412,49,119,461,531,Yes (direct run),2025-11,2026-10-26
+Brisbane,432,5,437,49,119,486,556,Yes (direct run),2025-11,2026-10-26
+Adelaide,275,3,278,49,189,327,467,Yes (2 runs; Moderate food is an outlier),2025-11,2026-10-26
+Sydney,,,692,49,119,741,811,Derived from comparison table,2025-11,2026-10-26
+Perth,,,362,49,119,411,481,Derived from comparison table,2025-11,2026-10-26

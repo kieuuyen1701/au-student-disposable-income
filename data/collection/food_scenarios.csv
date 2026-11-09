@@ -1,0 +1,17 @@
+﻿city,scenario,food_weekly_aud,source,note
+Sydney,low,49.00,Study Australia (Cheap),Eating out 0 days; at home Cheap
+Sydney,base,119.00,Study Australia (Moderate),Eating out 0 days; at home Moderate
+Sydney,high,150.00,EduConnect Australia (upper end of groceries range),Cross-check; $650/month x 12 / 52
+Melbourne,low,49.00,Study Australia (Cheap),Eating out 0 days; at home Cheap
+Melbourne,base,119.00,Study Australia (Moderate),Eating out 0 days; at home Moderate
+Melbourne,high,150.00,EduConnect Australia (upper end of groceries range),Cross-check; $650/month x 12 / 52
+Brisbane,low,49.00,Study Australia (Cheap),Eating out 0 days; at home Cheap
+Brisbane,base,119.00,Study Australia (Moderate),Eating out 0 days; at home Moderate
+Brisbane,high,150.00,EduConnect Australia (upper end of groceries range),Cross-check; $650/month x 12 / 52
+Perth,low,49.00,Study Australia (Cheap),Eating out 0 days; at home Cheap
+Perth,base,119.00,Study Australia (Moderate),Eating out 0 days; at home Moderate
+Perth,high,150.00,EduConnect Australia (upper end of groceries range),Cross-check; $650/month x 12 / 52
+Adelaide,low,49.00,Study Australia (Cheap),Eating out 0 days; at home Cheap
+Adelaide,base,189.00,Study Australia (Moderate),"Outlier: confirmed in two runs, higher than other cities"
+Adelaide,high,150.00,EduConnect Australia (upper end of groceries range),Cross-check; $650/month x 12 / 52
+Adelaide,sensitivity,119.00,"Study Australia (Moderate, other cities)",Use to test whether Adelaide ranking changes if food matched other cities
