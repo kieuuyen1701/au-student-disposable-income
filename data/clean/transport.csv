@@ -1,0 +1,14 @@
+city,state,scenario,concession_eligible,zone,fare_type,weekly_cost_aud,valid_from,valid_until,derived,source,period
+Melbourne,VIC,base,No,Zone 1+2,7-day pass (half-price promo),28.5,,2027-01-01,No,Public Transport Victoria,2026-10-26
+Melbourne,VIC,low,No,Zone 1+2,365-day pass (half-price promo),21.38,,2027-01-01,Yes,Public Transport Victoria,2026-10-26
+Melbourne,VIC,low,No,Zone 2,7-day pass (half-price promo),18.0,,2027-01-01,No,Public Transport Victoria,2026-10-26
+Melbourne,VIC,high,No,Zone 1+2,7-day pass (standard fare after promo),57.0,2027-01-01,,Yes,Public Transport Victoria,2026-10-26
+Sydney,NSW,base,No,Opal network,Adult weekly cap,50.0,,,No,Transport for NSW,2026-10-26
+Sydney,NSW,low,No,Opal network,Typical trips 0-10km,40.7,,,Yes,Transport for NSW,2026-10-26
+Brisbane,QLD,base,Not applicable (flat fare for all),All zones,50c per journey x 10 journeys,5.0,,,Yes,TransLink,2026-10-26
+Brisbane,QLD,high,Not applicable (flat fare for all),All zones,50c per journey x 20 journeys,10.0,,,Yes,TransLink,2026-10-26
+Adelaide,SA,base,Yes (full-time on-site),All zones,Concession 28-day pass / 4,15.4,,,Yes,Adelaide Metro,2026-10-26
+Adelaide,SA,high,No,All zones,Regular 28-day pass / 4,30.75,,,Yes,Adelaide Metro,2026-10-26
+Perth,WA,base,Yes (full-time WA institution),Network-wide,Concession SmartRider Go Anywhere x 10,14.4,,,Yes,Transperth,2026-10-26
+Perth,WA,low,Yes (full-time WA institution),Network-wide,Concession autoload Go Anywhere x 10,12.8,,,Yes,Transperth,2026-10-26
+Perth,WA,high,Yes (full-time WA institution),Network-wide,Concession DayRider cap x 5 days,16.0,,,Yes,Transperth,2026-10-26
