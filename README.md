@@ -1,161 +1,71 @@
-# Project Scope: Australia Student Disposable Income Explorer
+# Australia Student Disposable Income Explorer
 
-## 1. Project Overview
+Estimates how much money an international student has left each week after essential costs, across five Australian cities, two employment sectors and two living arrangements.
 
-This project analyses disposable income for international students across five Australian cities: Melbourne, Sydney, Brisbane, Perth and Adelaide.
+## Key findings
 
-It combines wage data, rental prices and essential living expenses to show how employment type, working hours and living arrangements affect financial affordability.
+Base case: 24 hours a week at Level 1 casual award rates, tax resident, share house unless stated.
 
-Deliverables: an interactive Power BI dashboard, supported by Python data cleaning, SQL analysis and evidence-based recommendations.
+- **Living arrangement matters most.** Living alone is negative in all five cities in the hospitality sector. Retail is positive in Adelaide, Melbourne and Brisbane (A$19 to A$57 per week).
+- **Adelaide ranks highest and Sydney lowest** in every one-at-a-time scenario tested. Sydney earns A$30 per week after costs in hospitality, against A$200 in Adelaide.
+- **Tax residency status moves disposable income more than rent.** Moving from resident to foreign resident tax treatment reduces it by about A$188 per week, compared with A$33 to A$54 for a 10% rent rise.
+- **Hours needed to break even** for living alone are 25 to 32 per week, above the 24 hours assumed in the base case.
 
-## 2. Problem Statement
+![Weekly disposable income by city](report/figures/disposable_income_by_city.png)
 
-International students face different living costs and employment opportunities depending on where they live and work. A city with higher wages may also have higher rent and living expenses, so higher earnings do not necessarily mean higher disposable income.
+## Method
 
-This project identifies which cities and employment scenarios offer better financial affordability for international students.
+1. **Collect:** 14 official and public sources, logged in `data/collection/source_register.csv` with URL, download date, reference period and limitations.
+2. **Clean:** pandas checks for data types, missing values, duplicates and city-name consistency. Each fix is documented in `notebooks/01_load_and_check.ipynb`.
+3. **Model:** weekly net income after tax and the low income tax offset, minus rent, transport, OSHC, food, utilities and phone (`notebooks/02_model.ipynb`).
+4. **Scenarios:** rent, working hours, tax residency, food and transport (`notebooks/03_scenarios.ipynb`).
+5. **SQL:** the same model rebuilt with DuckDB, validated against Python to within two cents (`sql/disposable_income.sql`, `notebooks/04_sql.ipynb`).
 
-## 3. Objectives
+## Assumptions
 
-- Compare estimated income and essential living costs across five cities.
-- Analyse income scenarios for four employment categories.
-- Calculate estimated after-tax income and disposable income.
-- Evaluate the impact of rent, working hours and living arrangements on affordability.
-- Build an interactive dashboard to support data-informed decisions.
-- Provide practical, evidence-based recommendations.
+- Wages: Fair Work award minimum rates, Level 1, adult casual, 24 hours per week split as 12 weekday, 6 Saturday, 6 Sunday.
+- Tax: ATO resident rates for 2026-27 and foreign resident rates for 2025-26 (assumed unchanged), with LITO for residents. Medicare levy excluded, assuming OSHC exemption.
+- Rent: Flatmates average room rent for share house; SQM "All units" as a proxy for living alone.
+- Transport: concession fares where eligible (Perth and Adelaide), full fare otherwise. Melbourne uses the half-price myki promotion to 1 January 2027.
+- Food: Study Australia Cost of Living Calculator, moderate at-home spending. Adelaide's $189 is an outlier in the source; a $119 sensitivity case is included.
+- OSHC: average of five providers.
 
-## 4. Target Users
+## Limitations
 
-- International students currently studying in Australia.
-- Prospective international students comparing cities.
-- Students budgeting while working part-time or casually.
+- All results are estimates based on minimum wages and published averages, not actual student earnings.
+- Hospitality and retail were chosen because they have award-based wage data. Tutoring and Junior IT were excluded because no comparable, defensible hourly wage data exists for casual student roles.
+- Rent data are asking rents from different sources and dates, and the living-alone proxy includes all unit sizes.
+- The study uses 24 hours per week as the base case. The hypothetical 48-hour scenario is a sensitivity test only, not a permitted work pattern.
+- Student visa work limits and tax residency depend on individual circumstances and should be verified before use.
 
-## 5. Scope
+## Repository structure
 
-### In Scope
+```
+data/
+├── raw/          source files (PDFs, screenshots) by topic
+├── collection/   tables compiled from raw sources (CSV)
+└── clean/        cleaned tables and model output
+notebooks/        01 load and check, 02 model, 03 scenarios, 04 SQL
+sql/              disposable_income.sql
+report/figures/   charts
+```
 
-- Cities: Melbourne, Sydney, Brisbane, Perth, Adelaide.
-- Employment categories: Hospitality, Retail (subject to data availability; may be dropped if no defensible wage data exists).
-- Wage, rental and essential living cost data collection.
-- Estimated income tax under documented assumptions.
-- Share-house vs living-alone comparison.
-- Scenario modelling for working hours, rent and wage changes.
-- Power BI dashboard, insights and recommendations.
+## How to run
 
-### Out of Scope
+1. Install Python 3.12 or later, then `pip install pandas matplotlib duckdb openpyxl`.
+2. Open the notebooks in order: `01_load_and_check`, `02_model`, `03_scenarios`, `04_sql`.
+3. Run each notebook from top to bottom. Paths are relative to the `notebooks/` folder.
 
-- Guaranteeing job offers or individual earnings.
-- Personalised tax, immigration or financial advice.
-- Analysis of every suburb or occupation.
-- Treating estimates as exact costs for every student.
-- Advanced forecasting of future rents or wages.
+## Status
 
-## 6. Key Business Questions
+- [x] Data collection and documentation
+- [x] Cleaning and quality checks
+- [x] Disposable income model
+- [x] Scenario analysis
+- [x] SQL integration
+- [ ] Power BI dashboard (in progress)
+- [ ] Written report and recommendations
 
-1. Which city provides the highest estimated disposable income under comparable scenarios?
-2. How does employment category affect a student's financial position?
-3. What share of after-tax income goes to rent?
-4. How would a 10% rent increase affect disposable income?
-5. How do different working-hour scenarios affect affordability?
-6. How do share-house and living-alone arrangements change the results?
-7. Which city and living arrangement suits different student profiles best?
+## Author
 
-## 7. Data Sources
-
-Credible, traceable sources are prioritised.
-
-- Australian Bureau of Statistics (ABS): Employee Earnings and Hours, Consumer Price Index, household expenditure.
-- Fair Work Ombudsman: casual pay rates under relevant modern awards (hospitality, retail).
-- Jobs and Skills Australia: occupation and industry profiles.
-- Study Australia: Cost of Living Calculator.
-- Rental market reports and documented rental listings (e.g. Domain, SQM Research, state housing reports).
-- Australian Taxation Office (ATO): tax rates and guidance.
-- Department of Home Affairs: student visa work conditions and living cost requirements.
-- OSHC provider pricing and public transport fare schedules.
-- Additional documented sources for expenses not covered above.
-
-For each dataset, record: source URL, download date, reference period, geographic coverage, units and known limitations. Data availability will be assessed before confirming final coverage.
-
-## 8. Methodology
-
-1. **Collect:** gather wage, rental and expense data from credible sources.
-2. **Clean (Python/pandas):** standardise formats, handle missing values, check duplicates, validate quality.
-3. **Integrate (SQL, SQLite or DuckDB):** join datasets by city, employment category and reference period.
-4. **Model:** calculate gross income, after-tax income, living expenses and disposable income.
-5. **Scenario analysis:** test alternative working-hour, rent and wage assumptions.
-6. **Visualise (Power BI):** compare cities, employment categories and living arrangements.
-7. **Recommend:** interpret results, identify key affordability drivers and give recommendations.
-
-## 9. Key Metrics
-
-- Estimated gross weekly income
-- Estimated after-tax weekly income
-- Weekly essential living costs
-- Weekly and monthly disposable income
-- Rent-to-net-income ratio
-- Affordability gap against a defined budget target
-- Change in disposable income under alternative scenarios
-
-**Core calculation:**
-Disposable Income = Income After Tax − Essential Living Expenses
-
-Essential expenses may include rent, food, transport, utilities, phone/internet, OSHC and other documented items. A category is included only where a defensible estimate exists.
-
-## 10. Scenario Modelling
-
-- **Base case:** working hours within the current student visa limit (to be verified against Home Affairs guidance before finalising; currently 48 hours per fortnight).
-- **Hypothetical sensitivity test:** higher weekly hours (e.g. 48 hours/week). This is not an assumption that such hours are permitted during study periods.
-- Rent increase of 10%.
-- Share house vs living alone.
-- Changes in wage rates and essential living expenses.
-
-Scenarios are interpreted as realistic options only after checking official visa work conditions.
-
-## 11. Tools
-
-- **Python / pandas:** cleaning and exploratory analysis
-- **SQL (SQLite or DuckDB):** data integration and analytical queries
-- **Power BI:** dashboard and scenario visualisation
-- **GitHub:** version control and documentation
-
-## 12. Deliverables
-
-- Raw datasets and source register
-- Cleaned datasets, data dictionary and data quality checks
-- Reproducible Python notebooks
-- SQL queries
-- Interactive Power BI dashboard
-- Report with insights and recommendations (8-10 pages)
-- GitHub repository with documentation
-
-## 13. Success Criteria
-
-- Metrics have clear definitions and reproducible calculations.
-- Sources, assumptions and reference periods are transparent.
-- Comparisons use compatible geographic levels, periods and scenarios.
-- Missing or unavailable data is explicitly identified.
-- Scenario analysis shows how rent and working hours affect disposable income.
-- The dashboard answers the key business questions.
-- Recommendations are supported by analysis, not unsupported assumptions.
-
-## 14. Limitations and Assumptions
-
-- Wage and rental datasets may differ in geographic coverage, reference periods and population groups.
-- National wage estimates may not represent city-level earnings.
-- Occupation-level wages may not reflect casual student employment.
-- Tax outcomes depend on individual circumstances; living costs vary by suburb and personal spending.
-- Where city- or occupation-specific data is unavailable, the limitation is documented and the analysis uses a clearly labelled proxy or excludes the comparison.
-- All results are estimates, not guaranteed financial outcomes.
-
-## 15. Project Status
-
-| Step | Status |
-|---|---|
-| Scope definition | Done |
-| Repository setup | Done |
-| Data collection | Done |
-| Data cleaning | Done |
-| Financial modelling | Done |
-| Dashboard | Not started |
-| Report and publish | Not started |
-
-**Next milestone:** collect the first wage dataset (Fair Work Ombudsman casual rates) and assess its suitability.
+Katie Kieu. Business Analytics student, Deakin University.
