@@ -1,0 +1,141 @@
+scenario,city,industry,housing,gross_weekly,net_weekly,essentials_weekly,disposable_weekly
+Base,Sydney,Hospitality,Share room,872.52,799.21,769.6,29.61
+Base,Sydney,Hospitality,Living alone,872.52,799.21,980.19,-180.98
+Base,Sydney,Retail,Share room,959.46,858.77,769.6,89.16
+Base,Sydney,Retail,Living alone,959.46,858.77,980.19,-121.43
+Base,Melbourne,Hospitality,Share room,872.52,799.21,604.1,195.11
+Base,Melbourne,Hospitality,Living alone,872.52,799.21,801.53,-2.32
+Base,Melbourne,Retail,Share room,959.46,858.77,604.1,254.66
+Base,Melbourne,Retail,Living alone,959.46,858.77,801.53,57.23
+Base,Brisbane,Hospitality,Share room,872.52,799.21,629.6,169.61
+Base,Brisbane,Hospitality,Living alone,872.52,799.21,839.97,-40.76
+Base,Brisbane,Retail,Share room,959.46,858.77,629.6,229.16
+Base,Brisbane,Retail,Living alone,959.46,858.77,839.97,18.79
+Base,Perth,Hospitality,Share room,872.52,799.21,631.0,168.21
+Base,Perth,Hospitality,Living alone,872.52,799.21,864.64,-65.43
+Base,Perth,Retail,Share room,959.46,858.77,631.0,227.76
+Base,Perth,Retail,Living alone,959.46,858.77,864.64,-5.88
+Base,Adelaide,Hospitality,Share room,872.52,799.21,599.0,200.21
+Base,Adelaide,Hospitality,Living alone,872.52,799.21,814.19,-14.98
+Base,Adelaide,Retail,Share room,959.46,858.77,599.0,259.76
+Base,Adelaide,Retail,Living alone,959.46,858.77,814.19,44.57
+Rent +10%,Sydney,Hospitality,Share room,872.52,799.21,823.3,-24.09
+Rent +10%,Sydney,Hospitality,Living alone,872.52,799.21,1054.95,-255.74
+Rent +10%,Sydney,Retail,Share room,959.46,858.77,823.3,35.46
+Rent +10%,Sydney,Retail,Living alone,959.46,858.77,1054.95,-196.18
+Rent +10%,Melbourne,Hospitality,Share room,872.52,799.21,643.4,155.81
+Rent +10%,Melbourne,Hospitality,Living alone,872.52,799.21,860.58,-61.36
+Rent +10%,Melbourne,Retail,Share room,959.46,858.77,643.4,215.36
+Rent +10%,Melbourne,Retail,Living alone,959.46,858.77,860.58,-1.81
+Rent +10%,Brisbane,Hospitality,Share room,872.52,799.21,673.8,125.41
+Rent +10%,Brisbane,Hospitality,Living alone,872.52,799.21,905.21,-106.0
+Rent +10%,Brisbane,Retail,Share room,959.46,858.77,673.8,184.96
+Rent +10%,Brisbane,Retail,Living alone,959.46,858.77,905.21,-46.44
+Rent +10%,Perth,Hospitality,Share room,872.52,799.21,674.4,124.81
+Rent +10%,Perth,Hospitality,Living alone,872.52,799.21,931.41,-132.19
+Rent +10%,Perth,Retail,Share room,959.46,858.77,674.4,184.36
+Rent +10%,Perth,Retail,Living alone,959.46,858.77,931.41,-72.64
+Rent +10%,Adelaide,Hospitality,Share room,872.52,799.21,632.1,167.11
+Rent +10%,Adelaide,Hospitality,Living alone,872.52,799.21,868.81,-69.6
+Rent +10%,Adelaide,Retail,Share room,959.46,858.77,632.1,226.66
+Rent +10%,Adelaide,Retail,Living alone,959.46,858.77,868.81,-10.04
+12 hours/week,Sydney,Hospitality,Share room,436.26,436.26,769.6,-333.34
+12 hours/week,Sydney,Hospitality,Living alone,436.26,436.26,980.19,-543.93
+12 hours/week,Sydney,Retail,Share room,479.73,473.73,769.6,-295.87
+12 hours/week,Sydney,Retail,Living alone,479.73,473.73,980.19,-506.46
+12 hours/week,Melbourne,Hospitality,Share room,436.26,436.26,604.1,-167.84
+12 hours/week,Melbourne,Hospitality,Living alone,436.26,436.26,801.53,-365.27
+12 hours/week,Melbourne,Retail,Share room,479.73,473.73,604.1,-130.37
+12 hours/week,Melbourne,Retail,Living alone,479.73,473.73,801.53,-327.8
+12 hours/week,Brisbane,Hospitality,Share room,436.26,436.26,629.6,-193.34
+12 hours/week,Brisbane,Hospitality,Living alone,436.26,436.26,839.97,-403.71
+12 hours/week,Brisbane,Retail,Share room,479.73,473.73,629.6,-155.87
+12 hours/week,Brisbane,Retail,Living alone,479.73,473.73,839.97,-366.24
+12 hours/week,Perth,Hospitality,Share room,436.26,436.26,631.0,-194.74
+12 hours/week,Perth,Hospitality,Living alone,436.26,436.26,864.64,-428.38
+12 hours/week,Perth,Retail,Share room,479.73,473.73,631.0,-157.27
+12 hours/week,Perth,Retail,Living alone,479.73,473.73,864.64,-390.91
+12 hours/week,Adelaide,Hospitality,Share room,436.26,436.26,599.0,-162.74
+12 hours/week,Adelaide,Hospitality,Living alone,436.26,436.26,814.19,-377.93
+12 hours/week,Adelaide,Retail,Share room,479.73,473.73,599.0,-125.27
+12 hours/week,Adelaide,Retail,Living alone,479.73,473.73,814.19,-340.46
+48 hours/week (hypothetical),Sydney,Hospitality,Share room,1745.04,1403.84,769.6,634.23
+48 hours/week (hypothetical),Sydney,Hospitality,Living alone,1745.04,1403.84,980.19,423.64
+48 hours/week (hypothetical),Sydney,Retail,Share room,1918.92,1525.55,769.6,755.95
+48 hours/week (hypothetical),Sydney,Retail,Living alone,1918.92,1525.55,980.19,545.36
+48 hours/week (hypothetical),Melbourne,Hospitality,Share room,1745.04,1403.84,604.1,799.73
+48 hours/week (hypothetical),Melbourne,Hospitality,Living alone,1745.04,1403.84,801.53,602.3
+48 hours/week (hypothetical),Melbourne,Retail,Share room,1918.92,1525.55,604.1,921.45
+48 hours/week (hypothetical),Melbourne,Retail,Living alone,1918.92,1525.55,801.53,724.02
+48 hours/week (hypothetical),Brisbane,Hospitality,Share room,1745.04,1403.84,629.6,774.23
+48 hours/week (hypothetical),Brisbane,Hospitality,Living alone,1745.04,1403.84,839.97,563.86
+48 hours/week (hypothetical),Brisbane,Retail,Share room,1918.92,1525.55,629.6,895.95
+48 hours/week (hypothetical),Brisbane,Retail,Living alone,1918.92,1525.55,839.97,685.58
+48 hours/week (hypothetical),Perth,Hospitality,Share room,1745.04,1403.84,631.0,772.83
+48 hours/week (hypothetical),Perth,Hospitality,Living alone,1745.04,1403.84,864.64,539.19
+48 hours/week (hypothetical),Perth,Retail,Share room,1918.92,1525.55,631.0,894.55
+48 hours/week (hypothetical),Perth,Retail,Living alone,1918.92,1525.55,864.64,660.91
+48 hours/week (hypothetical),Adelaide,Hospitality,Share room,1745.04,1403.84,599.0,804.83
+48 hours/week (hypothetical),Adelaide,Hospitality,Living alone,1745.04,1403.84,814.19,589.64
+48 hours/week (hypothetical),Adelaide,Retail,Share room,1918.92,1525.55,599.0,926.55
+48 hours/week (hypothetical),Adelaide,Retail,Living alone,1918.92,1525.55,814.19,711.36
+Foreign resident,Sydney,Hospitality,Share room,872.52,610.76,769.6,-158.84
+Foreign resident,Sydney,Hospitality,Living alone,872.52,610.76,980.19,-369.43
+Foreign resident,Sydney,Retail,Share room,959.46,671.62,769.6,-97.98
+Foreign resident,Sydney,Retail,Living alone,959.46,671.62,980.19,-308.57
+Foreign resident,Melbourne,Hospitality,Share room,872.52,610.76,604.1,6.66
+Foreign resident,Melbourne,Hospitality,Living alone,872.52,610.76,801.53,-190.77
+Foreign resident,Melbourne,Retail,Share room,959.46,671.62,604.1,67.52
+Foreign resident,Melbourne,Retail,Living alone,959.46,671.62,801.53,-129.91
+Foreign resident,Brisbane,Hospitality,Share room,872.52,610.76,629.6,-18.84
+Foreign resident,Brisbane,Hospitality,Living alone,872.52,610.76,839.97,-229.21
+Foreign resident,Brisbane,Retail,Share room,959.46,671.62,629.6,42.02
+Foreign resident,Brisbane,Retail,Living alone,959.46,671.62,839.97,-168.35
+Foreign resident,Perth,Hospitality,Share room,872.52,610.76,631.0,-20.24
+Foreign resident,Perth,Hospitality,Living alone,872.52,610.76,864.64,-253.88
+Foreign resident,Perth,Retail,Share room,959.46,671.62,631.0,40.62
+Foreign resident,Perth,Retail,Living alone,959.46,671.62,864.64,-193.02
+Foreign resident,Adelaide,Hospitality,Share room,872.52,610.76,599.0,11.76
+Foreign resident,Adelaide,Hospitality,Living alone,872.52,610.76,814.19,-203.43
+Foreign resident,Adelaide,Retail,Share room,959.46,671.62,599.0,72.62
+Foreign resident,Adelaide,Retail,Living alone,959.46,671.62,814.19,-142.57
+Food low ($49),Sydney,Hospitality,Share room,872.52,799.21,699.6,99.61
+Food low ($49),Sydney,Hospitality,Living alone,872.52,799.21,910.19,-110.98
+Food low ($49),Sydney,Retail,Share room,959.46,858.77,699.6,159.16
+Food low ($49),Sydney,Retail,Living alone,959.46,858.77,910.19,-51.43
+Food low ($49),Melbourne,Hospitality,Share room,872.52,799.21,534.1,265.11
+Food low ($49),Melbourne,Hospitality,Living alone,872.52,799.21,731.53,67.68
+Food low ($49),Melbourne,Retail,Share room,959.46,858.77,534.1,324.66
+Food low ($49),Melbourne,Retail,Living alone,959.46,858.77,731.53,127.23
+Food low ($49),Brisbane,Hospitality,Share room,872.52,799.21,559.6,239.61
+Food low ($49),Brisbane,Hospitality,Living alone,872.52,799.21,769.97,29.24
+Food low ($49),Brisbane,Retail,Share room,959.46,858.77,559.6,299.16
+Food low ($49),Brisbane,Retail,Living alone,959.46,858.77,769.97,88.79
+Food low ($49),Perth,Hospitality,Share room,872.52,799.21,561.0,238.21
+Food low ($49),Perth,Hospitality,Living alone,872.52,799.21,794.64,4.57
+Food low ($49),Perth,Retail,Share room,959.46,858.77,561.0,297.76
+Food low ($49),Perth,Retail,Living alone,959.46,858.77,794.64,64.12
+Food low ($49),Adelaide,Hospitality,Share room,872.52,799.21,459.0,340.21
+Food low ($49),Adelaide,Hospitality,Living alone,872.52,799.21,674.19,125.02
+Food low ($49),Adelaide,Retail,Share room,959.46,858.77,459.0,399.76
+Food low ($49),Adelaide,Retail,Living alone,959.46,858.77,674.19,184.57
+Food high ($150),Sydney,Hospitality,Share room,872.52,799.21,800.6,-1.39
+Food high ($150),Sydney,Hospitality,Living alone,872.52,799.21,1011.19,-211.98
+Food high ($150),Sydney,Retail,Share room,959.46,858.77,800.6,58.16
+Food high ($150),Sydney,Retail,Living alone,959.46,858.77,1011.19,-152.43
+Food high ($150),Melbourne,Hospitality,Share room,872.52,799.21,635.1,164.11
+Food high ($150),Melbourne,Hospitality,Living alone,872.52,799.21,832.53,-33.32
+Food high ($150),Melbourne,Retail,Share room,959.46,858.77,635.1,223.66
+Food high ($150),Melbourne,Retail,Living alone,959.46,858.77,832.53,26.23
+Food high ($150),Brisbane,Hospitality,Share room,872.52,799.21,660.6,138.61
+Food high ($150),Brisbane,Hospitality,Living alone,872.52,799.21,870.97,-71.76
+Food high ($150),Brisbane,Retail,Share room,959.46,858.77,660.6,198.16
+Food high ($150),Brisbane,Retail,Living alone,959.46,858.77,870.97,-12.21
+Food high ($150),Perth,Hospitality,Share room,872.52,799.21,662.0,137.21
+Food high ($150),Perth,Hospitality,Living alone,872.52,799.21,895.64,-96.43
+Food high ($150),Perth,Retail,Share room,959.46,858.77,662.0,196.76
+Food high ($150),Perth,Retail,Living alone,959.46,858.77,895.64,-36.88
+Food high ($150),Adelaide,Hospitality,Share room,872.52,799.21,560.0,239.21
+Food high ($150),Adelaide,Hospitality,Living alone,872.52,799.21,775.19,24.02
+Food high ($150),Adelaide,Retail,Share room,959.46,858.77,560.0,298.76
+Food high ($150),Adelaide,Retail,Living alone,959.46,858.77,775.19,83.57
